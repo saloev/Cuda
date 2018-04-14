@@ -140,4 +140,100 @@ a: active {
 					}
 
 
+/*
 
+*/
+.team {
+	padding: 100px 0 150px 0; 
+
+	color: #3c4761; text-align: center;
+
+	background: #e7f1f8;
+}
+	.team .wrapper {
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+	}
+		.team h2 {
+			margin: 0;
+
+			font-size: 41.29px; line-height: 30.87px; 
+		}
+		.team h2::after {
+			content: ""; display: block; height: 5px; width: 80px;  margin: 20px auto;
+
+			background: rgba(189, 209, 223, 0.75);
+		}
+		.team .team-subtitle {
+			margin: 5px 0 80px 0;
+
+			font-size: 18.58px; line-height: 26.84px;
+		}
+		.team .team-list {
+			max-width: 1100px; margin: 0; padding: 0; display: flex; justify-content: space-around; flex-wrap: wrap;
+
+			list-style: none; 
+		} 
+			.team .team-list .team-item {
+				position: relative;
+
+				box-sizing:border-box; max-width: 23.63%; padding: 0 2.5%;
+			}
+
+				.team-item::before {
+						content: ""; display: block; width: 200px; height: 200px; 
+
+						border-radius:100px; background: #878787;
+				}
+				.team-item img {
+					position: absolute; top: 20px; left: 50px;
+				}
+				.team-item h3 {
+					margin: 35px 0 15px 0;
+
+					font-size: 24px; line-height: 18px; text-transform: uppercase; font-weight: 700;
+				}
+				.team-item p {
+					margin-bottom: 30px;
+				} 
+					.team-item  p a {
+						display: block; padding-bottom: 5px; margin-bottom: 30px; border-bottom: 2px solid transparent;
+
+						color: #30bae7; text-decoration: none; font-weight: 400;
+
+						/*transition: 0.1s all linear;*/
+					}
+					.team-item p a:hover,
+					.team-item p a:focus {
+						border-bottom: 2px solid #30bae7; outline: 0;
+					}
+					.team-item .team-contacts {
+						display: flex; justify-content: center; margin: 0;padding: 0;
+
+						list-style: none;
+					}
+						.team-contacts li {
+							margin-right: 10px;
+						}
+						.team-contacts li:last-child {
+							margin-right: 0;
+						}
+							
+							.team-contacts li a {
+								display:block; width: 30px; height: 30px; 
+
+								background:#bdd1df; border-radius: 15px; 
+							}
+							.team-contacts .facebook{
+								background:#bdd1df url("img/social.png") 6px 5px no-repeat;
+							}
+							.team-contacts .twitter {
+								background:#bdd1df url("img/social.png") -75px 5px no-repeat;
+							}
+							.team-contacts .linkedIn {
+								background:#bdd1df url("img/social.png") -18px 5px no-repeat;
+							}
+							.team-contacts .email {
+								background:#bdd1df url("img/social.png") -46px 5px no-repeat;
+							}
+
+						
