@@ -1,0 +1,143 @@
+body {
+	margin: 0; padding: 0;
+
+	font-family: 'Titillium Web', sans-serif; font-size: 16px; line-height: 18px; color: #fff;
+	background: #87509c;
+}
+a:link {
+	
+} 
+a:visited {
+	
+}
+a:hover, a:focus {
+
+}
+a: active {
+
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;
+
+	clip: rect(0 0 0 0); overflow: hidden;
+}
+
+.btn {
+	display: block; padding: 25px 80px; 
+
+	font-size: 18px; line-height: 26px; text-transform: uppercase; color: #fff; font-weight: 700;text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto; padding: 0;
+}
+/*
+* Main navigation of site 
+* Logo and menu  
+*/
+.main-navigation {
+	margin: 60px 0 140px 0;
+	display: flex; justify-content: space-between;
+}
+	.main-navigation .main-logo {
+		margin-left: 40px;
+	}
+	.main-navigation .main-menu {
+		margin: 0; padding: 0;
+		display: flex; justify-content: space-between; flex-wrap: wrap;
+
+		list-style: none; 
+	}
+		.main-menu li {
+			margin: 0; padding: 0;
+		}
+			.main-menu li a {
+				display: block; margin-right: 20px; padding: 5px 10px;border: 5px solid transparent; 
+
+				text-transform: uppercase; text-decoration: none; color: #fff;  
+			}
+			.main-menu li a:hover,
+			.main-menu li a:focus {
+				border-radius: 5px;
+
+				background-color: rgb(100, 58, 121);
+			}
+			.main-menu li a:active {
+				background-color: rgb(102, 42, 133);
+			}
+
+/*
+
+*/
+.vacancy {
+	margin-bottom: 150px;
+}
+	.vacancy .wrapper {
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+
+	}
+		.vacancy h2 {
+
+			font-size: 42px; line-height: 48px; text-align: center; font-weight: 900; color: #fff; 
+		}
+		.vacancy a {
+			border-radius: 5px; background: #eb7d4b; border-bottom: 5px solid #c05f33;
+		}
+		.vacancy a:hover,
+		.vacancy a:focus {
+			cursor: pointer;  background: rgba(235, 125, 75, 0.8); border-bottom: 5px solid rgba(192, 95, 51, 0.8); 
+		}
+		.vacancy a:active {
+			cursor: pointer;  background: rgba(235, 125, 75, 0.5); border-bottom: 5px solid rgba(192, 95, 51, 0.5);
+		}
+
+/*
+
+*/
+.services {
+	padding: 100px 0 150px 0; 
+
+	background: #17c2a4;
+}
+	.services .wrapper {
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+	}
+		.services h2 {
+			margin: 0;
+
+			font-size: 42px; line-height: 30px; color: #fff; 
+		}
+		.services h2::after {
+			content: ""; display: block; width: 80px; height: 5px; margin: 20px auto; background: rgba(0, 0, 0, 0.15);
+		}
+		.services .services-subtitle {
+			margin: 0 0 80px 0;	
+
+			font-size: 18px; line-height: 26px; text-align: center;
+		}
+		.services  ul {
+			margin: 0; padding: 0; display: flex; justify-content: space-around; flex-wrap: wrap; 
+			
+			list-style: none; text-align: center;
+		}
+			.services  ul li {
+				width: 17.27%; margin: 0 3.18%;
+			}
+				.services  ul a {
+					text-decoration: none; color: #fff;
+				}
+					.services  ul a h3 {
+						margin: 50px 0 15px 0;	
+
+						font-size: 24px; line-height: 18px; text-transform: uppercase;
+					}
+					.services  ul a p {
+						font-size: 16px; line-height: 24px; 
+					}
+
+
+
