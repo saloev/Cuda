@@ -120,7 +120,7 @@ a: active {
 			font-size: 18px; line-height: 26px; text-align: center;
 		}
 		.services  ul {
-			margin: 0; padding: 0; display: flex; justify-content: space-around; flex-wrap: wrap; 
+			margin: 0; padding: 0;display: flex; justify-content: space-around;  
 			
 			list-style: none; text-align: center;
 		}
@@ -236,4 +236,89 @@ a: active {
 								background:#bdd1df url("img/social.png") -46px 5px no-repeat;
 							}
 
-						
+	
+/*
+
+*/
+.skills {
+	padding: 100px 0 150px 0; 
+
+	color: #3c4761; text-align: center;
+
+	background: #fff;
+}
+	.skills .wrapper {
+		display: flex; flex-direction: column; align-items: center;
+	}	
+		.skills h2 {
+			margin: 0;
+
+			font-size: 40px; line-height: 30px; text-transform: uppercase; font-weight: 700;
+		}
+		.skills h2::after {
+			content: ""; display: block; width: 80px; height: 5px; margin: 20px auto;
+
+			background: rgba(223, 232, 237, 1);
+		}
+		.skills .skills-subtitle {
+			margin: 0 0 85px 0;
+
+			font-size: 18px; line-height: 26px;
+		}			
+		.skills .skills-list {
+			margin: 0; padding: 0; width:100%; display: flex; justify-content: space-around;
+
+			list-style: none;
+		}
+		.skills ul li {
+			position: relative;
+
+			width: 23.63%; padding: 0 1.18%;
+		}
+		.skills ul li:first-child::before {
+			content: ""; display: block; width: 160px; height: 160px; margin: 0 auto 30px auto;
+
+			border-radius: 50%; border: 10px solid #dfe8ed;
+
+			animation: webDesign 2s linear 0.1s  normal forwards;
+		}
+		.skills ul li:nth-child(2)::before {
+			content: ""; display: block; width: 160px; height: 160px; margin: 0 auto 30px auto;
+
+			border-radius: 50%; border: 10px solid #dfe8ed;
+		}
+		.skills ul li:nth-child(3)::before {
+			content: ""; display: block; width: 160px; height: 160px; margin: 0 auto 30px auto;
+
+			border-radius: 50%; border: 10px solid #dfe8ed;
+		}
+		.skills ul li:last-child::before {
+			content: ""; display: block; width: 160px; height: 160px; margin: 0 auto 30px auto;
+
+			border-radius: 50%; border: 10px solid #dfe8ed;
+		}
+		
+		/*
+			animation
+
+		*/
+		@keyframes webDesign{
+			0%{
+				border-color: #dfe8ed;
+				
+			}
+			20%{
+				border-color: red;
+			}
+			
+		}
+		
+		.skills ul span {
+			position: absolute; top: 75px; left: 110px;
+
+			font-size: 30px; line-height: 21px; text-transform: uppercase; font-weight: 400;
+		}
+		.skills ul p {
+
+			font-size: 24px; line-height: 18px; font-weight: 700; text-transform: uppercase;
+		}
