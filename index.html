@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Cuda</title>
 	<link rel="stylesheet" href="normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -254,31 +254,40 @@
 			</div>
 		</section>
 		<section class="feedback">
-			<h2 class="section-tittle">GET IN TOUCH</h2>
-			<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-			<form action="https://www.some-site.ru">
-				<lable for="name" class="visually-hidden"></lable>
-				<input type="text" id="name" placeholder="your name" required></input>
-				<lable for="email" class="visually-hidden"></lable>
-				<input type="email" id="email" placeholder="Your e-mail" required></input>
-				<lable for="name" class="visually-hidden"></lable>
-				<input type="text" id="name" placeholder="Your massege" required></input>
-				<input type="button" value="Sand massege">
-			</form>
+			<div class="wrapper">
+				<h2 class="section-tittle">GET IN TOUCH</h2>
+				<p class="feedback-subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+				<form action="https://www.some-site.com">
+					<p>
+						<lable for="name" class="visually-hidden"></lable>
+						<input type="text" id="name" placeholder="Your name*" required></input>
+					</p>
+					<p>
+						<lable for="email" class="visually-hidden"></lable>
+						<input type="email" id="email" placeholder="Your e-mail*" required></input>
+					</p>
+					<p>
+						<lable for="Your-Message" class="visually-hidden"></lable>
+						<textarea name="" id="Your-Message" cols="30" rows="10" placeholder="Your Message*"></textarea>
+					</p>
+					<input type="button" value="Sand massege">
+				</form>
+			</div>
 		</section>
 	</main>
 
 	<footer class="main-footer">
-		<ul>
-			<li><a href="">Facebook</a></li>
-			<li><a href="">Twitter</a></li>
-			<li><a href="">Google+</a></li>
-			<li><a href="">Linkedln</a></li>
-			<li><a href="">Behance</a></li>
-			<li><a href="">Dribbble</a></li>
-			<li><a href="">Github</a></li>
-		</ul>
-		
+		<div class="wrapper">
+			<ul>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">Twitter</a></li>
+				<li><a href="">Google+</a></li>
+				<li><a href="">Linkedln</a></li>
+				<li><a href="">Behance</a></li>
+				<li><a href="">Dribbble</a></li>
+				<li><a href="">Github</a></li>
+			</ul>
+		</div>
 	</footer>
 	
 </body>
