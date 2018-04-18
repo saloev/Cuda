@@ -419,3 +419,56 @@ a: active {
 /*
 
 */
+.reviews {
+	padding: 100px 0 150px 0; 
+
+	color: #fff;
+
+	background: #d74680;
+}
+	.reviews .wrapper {
+		display:  flex;  flex-direction: column; align-items: center;
+	}
+		.reviews h2 {
+			margin: 0; 
+
+			font-size: 40px; line-height: 30px; text-transform: uppercase; font-weight: 700;
+		}
+		.reviews h2::after {
+			content: ""; margin: 20px auto; display: block; width: 80px; height: 5px; 
+
+			background: rgba(0, 0, 0, 0.15)
+		}
+		.reviews-subtitle {
+			margin: 0 0 80px 0;
+
+			font-size: 18px; line-height: 26px; text-align: center; font-weight: 400;
+		}
+		.reviews-people-list {
+			margin: 0; padding: 0; display: flex; width: 100%; flex-wrap: wrap;
+
+			list-style: none;
+		}
+			.reviews-people-list li {
+				display: flex; justify-content: space-between;
+
+				width: 47.27%; padding:10px 20px 0 0; margin:0 20px 120px 0;
+			}
+			.reviews-people-list li:nth-child(even) {
+				margin-right: 0px;
+			}
+				.reviews-people-list li img {
+					margin-right: 40px;
+				}
+				.reviews-people-list li p:first-child {
+					margin: 0 0 20px 0;
+					font-size: 18px; line-height: 26px; font-weight: 400; font-style: italic;
+				}
+				.reviews-people-list li p:nth-child(2) {
+					margin: 0; padding: 0;
+					font-size: 24px; line-height: 26px; font-weight: 700; text-transform: uppercase;
+				}
+				.reviews-people-list li p:last-child {
+					margin: 0; padding: 0;
+					color: #ffdd99; font-size: 18px; line-height: 26px; font-weight: 400;
+				}
