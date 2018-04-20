@@ -16,7 +16,11 @@ a:hover, a:focus {
 a: active {
 
 }
-
+.section-tittle {
+	font-size: calc( (100vw - 480px)/(1280 - 480) * (40 - 20) + 20px); 
+	line-height: calc( (100vw - 480px)/(1280 - 480) * (30 - 15) + 15px);
+	text-transform: uppercase; text-align: center;  font-weight: 700;
+}
 .visually-hidden {
 	position: absolute;
 
@@ -81,8 +85,7 @@ a: active {
 
 	}
 		.vacancy h2 {
-
-			font-size: 42px; line-height: 48px; text-align: center; font-weight: 900; color: #fff; 
+			line-height: calc( (100vw - 480px)/(1280 - 480) * (40 - 15) + 15px); font-weight: 900; color: #fff; 
 		}
 		.vacancy a {
 			border-radius: 5px; background: #eb7d4b; border-bottom: 5px solid #c05f33;
@@ -109,7 +112,7 @@ a: active {
 		.services h2 {
 			margin: 0;
 
-			font-size: 42px; line-height: 30px; color: #fff; 
+			color: #fff; 
 		}
 		.services h2::after {
 			content: ""; display: block; width: 80px; height: 5px; margin: 20px auto; background: rgba(0, 0, 0, 0.15);
@@ -155,8 +158,6 @@ a: active {
 	}
 		.team h2 {
 			margin: 0;
-
-			font-size: 41.29px; line-height: 30.87px; 
 		}
 		.team h2::after {
 			content: ""; display: block; height: 5px; width: 80px;  margin: 20px auto;
@@ -253,7 +254,7 @@ a: active {
 		.skills h2 {
 			margin: 0;
 
-			font-size: 40px; line-height: 30px; text-transform: uppercase; font-weight: 700;
+			font-weight: 700;
 		}
 		.skills h2::after {
 			content: ""; display: block; width: 80px; height: 5px; margin: 20px auto;
@@ -340,7 +341,7 @@ a: active {
 		.portfolio h2 {
 			margin: 0; 
 
-			font-size: 40px; line-height: 30px; text-transform: uppercase; font-weight: 700;
+			font-weight: 700;
 		}
 		.portfolio h2::after {
 			content: ""; display: block; width: 80px; height: 5px; margin: 20px auto;
@@ -348,7 +349,7 @@ a: active {
 			background: #e5c37f;
 		}
 		.portfolio .portfolio-button-list {
-			margin: 40px 0 60px 0; padding: 0; display: flex; justify-content: space-around;
+			margin: 40px 0 60px 0; padding: 0; display: flex; justify-content: space-around; flex-wrap: nowrap;
 
 			list-style: none; font-size: 18px; line-height: 20px; text-transform: uppercase; font-weight: 400;
 		}
@@ -432,7 +433,7 @@ a: active {
 		.reviews h2 {
 			margin: 0; 
 
-			font-size: 40px; line-height: 30px; text-transform: uppercase; font-weight: 700;
+			font-weight: 700;
 		}
 		.reviews h2::after {
 			content: ""; margin: 20px auto; display: block; width: 80px; height: 5px; 
@@ -488,8 +489,6 @@ a: active {
 	}
 		.feedback h2 {
 			margin: 0; 
-
-			font-size: 40px; line-height: 30px; text-transform: uppercase;
 		}
 		.feedback h2::after {
 			content: ""; margin: 20px auto; display: block; width: 80px; height: 5px; 
@@ -577,3 +576,62 @@ a: active {
 		.main-footer ul li:last-child a{
 			margin-right: 0;
 		}
+
+@media screen and (max-width: 1115px) {
+/*
+	portfolio	
+*/
+	.portfolio-list-all {	
+		flex-direction: column; align-items: center;	
+	}
+
+/*
+	reviews
+*/
+	.reviews-people-list {
+		flex-direction: column; align-items: center;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+/*
+	services
+*/
+	.services ul {
+		flex-direction: column; align-items: center;
+	}
+
+
+/*
+	team
+*/
+	.team .team-list {
+		flex-direction: column; align-items: center;
+	}
+
+/*
+	skills
+*/
+	.skills .skills-list {
+		flex-direction: column; align-items: center;
+	}
+
+/*
+	feedback
+*/
+	.feedback form {
+		flex-direction: column; align-items: center;
+	}
+		.feedback form p:first-child,.feedback form p:nth-child(2) {
+			width: 100%;  margin: 0 0 10px 0 ;
+		}
+
+/*
+	footer
+*/
+	.main-footer ul li a{
+		margin-right: 15px;
+
+		font-size: 20px; line-height: 15px;
+	}
+}
