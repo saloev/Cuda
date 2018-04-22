@@ -656,3 +656,30 @@ a: active {
 		padding: 10px 25px;
 	}
 }
+
+/*
+
+	loader
+*/
+.loader {
+	position: fixed; top: 0; left: 0; z-index: 10;
+
+	width: 100%; height: 100%;
+
+	visibility: visible; 
+	opacity: 1;
+	
+	background: #fff;
+
+	transition: 1s all ease-in-out;
+}
+	.loader .load {
+		position: absolute; top: 50%; left: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+
+#endOfLoader {
+	visibility: hidden;
+	opacity: 0;
+}
