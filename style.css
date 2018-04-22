@@ -32,7 +32,7 @@ a: active {
 .btn {
 	display: block; padding: 25px 80px; 
 
-	font-size: 18px; line-height: 26px; text-transform: uppercase; color: #fff; font-weight: 700;text-decoration: none;
+	font-size: calc( (100vw - 480px)/(1280 - 480) * (18 - 16) + 16px); line-height: calc( (100vw - 480px)/(1280 - 480) * (26 - 18) + 18px); text-transform: uppercase; color: #fff; font-weight: 700;text-decoration: none;
 }
 
 .wrapper {
@@ -315,7 +315,7 @@ a: active {
 		}
 		
 		.skills ul span {
-			position: absolute; top: 75px; left: 110px;
+			position: absolute; left: 0; right: 0; margin: 0 auto; top: 75px;
 
 			font-size: 30px; line-height: 21px; text-transform: uppercase; font-weight: 400;
 		}
@@ -564,7 +564,7 @@ a: active {
 		.main-footer ul li a {
 			display: block; padding: 10px; margin-right: 50px;
 
-			color: #fff;font-size: 24px; line-height: 30px; font-weight: 600; text-decoration: none;
+			color: #fff;font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 15) + 15px); line-height: calc( (100vw - 480px)/(1280 - 480) * (30 - 15) + 15px); font-weight: 600; text-decoration: none;
 		}
 		.main-footer ul li a:hover,
 		.main-footer ul li a:focus {
@@ -594,12 +594,22 @@ a: active {
 }
 
 @media screen and (max-width: 1025px) {
+.btn {
+	padding: 10px 25px;
+}
+
+
 /*
 	services
 */
 	.services ul {
-		flex-direction: column; align-items: center;
+	  flex-direction: column; align-items: center;
+
+		text-align: left;
 	}
+		.services ul li {
+
+		}
 
 
 /*
@@ -608,6 +618,13 @@ a: active {
 	.team .team-list {
 		flex-direction: column; align-items: center;
 	}
+		.team-list li {
+			margin-bottom: 10px;
+		}
+
+		.team-list img {
+			left: 40px;
+		}
 
 /*
 	skills
@@ -632,6 +649,10 @@ a: active {
 	.main-footer ul li a{
 		margin-right: 15px;
 
-		font-size: 20px; line-height: 15px;
+		
+	}
+
+	.feedback form input[type="button"]{
+		padding: 10px 25px;
 	}
 }
